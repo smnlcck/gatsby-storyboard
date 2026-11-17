@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>It's Not Goodbye — Storyboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600;700&family=Inter:wght@600&family=Alfa+Slab+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:"Boyrun";src:url("fonts/Boyrun.ttf") format("truetype");font-display:swap}
+:root{--ink:#000;--muted:#4a4a4a;--line:#d9d9d9}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;color:var(--ink);font-family:"Josefin Sans",sans-serif;-webkit-font-smoothing:antialiased}
+header.top{padding:7vw 6vw 4vw;border-bottom:1px solid var(--line)}
+.eyebrow{font-weight:600;letter-spacing:.32em;text-transform:uppercase;font-size:13px;color:var(--muted)}
+h1{font-family:"Inter",sans-serif;font-weight:600;letter-spacing:-.02em;text-transform:uppercase;font-size:clamp(52px,9vw,140px);line-height:.9;margin:20px 0 28px}
+.fields{display:flex;flex-wrap:wrap;gap:14px 48px;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.fields b{color:var(--ink);font-weight:600;margin-right:10px}
+.fields i{font-family:"Boyrun",cursive;font-style:normal;font-size:24px;letter-spacing:0;text-transform:none;color:var(--ink);border-bottom:1.5px solid var(--ink);padding:0 8px}
+.intro p+p{margin-top:.7em}
+.intro{font-family:"Boyrun",cursive;font-size:clamp(22px,2vw,28px);line-height:1.4;max-width:46ch;margin-top:72px;color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,520px),1fr));gap:56px 40px;padding:5vw 6vw 7vw}
+.meta{display:grid;grid-template-columns:.7fr .7fr 1.6fr 1fr;border:2px solid var(--ink);border-bottom:0}
+.meta div{padding:6px 10px;border-right:2px solid var(--ink)}
+.meta div:last-child{border-right:0}
+.meta span{display:block;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.meta b{font-family:"Boyrun",cursive;font-weight:700;font-size:22px;line-height:1.1}
+.frame{border:2px solid var(--ink);background:#fff}.frame img{display:block;width:100%;height:auto}
+.cap{position:relative;padding:12px 4px 0;font-family:"Boyrun",cursive;font-size:22px;line-height:1.35;}
+.cap .cue{font-family:"Josefin Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.cap p{padding-right:96px}
+.trans{position:absolute;right:0;top:14px;font-family:"Josefin Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:.2em;border:2px solid var(--ink);padding:5px 9px}
+footer{padding:4vw 6vw;border-top:1px solid var(--line);color:var(--muted);font-size:13px;letter-spacing:.08em}
+@media (max-width:560px){.meta{grid-template-columns:1fr 1fr}.meta div:nth-child(2){border-right:0}.meta div:nth-child(-n+2){border-bottom:2px solid var(--ink)}.cap p{padding-right:0}.trans{position:static;display:inline-block;margin-top:8px}}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<pattern id="h1" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><line x1="0" y1="0" x2="0" y2="7" stroke="#111" stroke-width="1" opacity=".55"/></pattern>
+<pattern id="h2" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="9" stroke="#111" stroke-width=".8" opacity=".4"/></pattern>
+<filter id="rough" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="3"/></filter>
+<filter id="wash" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="9"/><feDisplacementMap in="SourceGraphic" scale="14"/></filter>
+<filter id="soft"><feGaussianBlur stdDeviation="3"/></filter>
+<filter id="blur2"><feGaussianBlur stdDeviation="2.2"/></filter>
+<radialGradient id="glow"><stop offset="0" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+<linearGradient id="fog" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+</defs></svg>
+<header class="top">
+  <div class="eyebrow">Gatsby — Music video</div>
+  <h1>Storyboard</h1>
+  <div class="fields"><span><b>Project</b><i>It's Not Goodbye</i></span><span><b>Frames</b><i>16 keyframes</i></span><span><b>Aspect</b><i>16:9</i></span><span><b>Setting</b><i>Rural train station, winter, 1950s styles</i></span></div>
+<div class="intro"><p>This music video is based on the premise that "It's not goodbye" = Hello.</p><p>The band play as buskers in an old-style train station at winter time where they observe multiple types of goodbyes based on the song lyrics.</p><p>Most scenes can be generated using AI; but the band scenes can be shot at Malahide Train Station.</p><p>The underlying theme is the story of the old man.</p></div>
+</header>
+<main class="grid">
+<article class="card">
+  <div class="meta"><div><span>Frame</span><b>01</b></div><div><span>Scene</span><b>1</b></div><div><span>Shot</span><b>Opening title</b></div><div><span>Shot size</span><b>EWS</b></div></div>
+  <div class="frame"><img src="frames/f01c.jpg" width="1600" height="893" loading="lazy" alt="Frame 1: Opening title"></div>
+  <div class="cap"><p class="cue">Intro</p><p>Film noir title card: black and white, letterboxed, grainy. Retro 3D lettering over the foggy platform at dawn. The old man is already on the bench.</p><span class="trans">DISSOLVE</span></div>
+</article>
+<article class="card">
+  <div class="meta"><div><span>Frame</span><b>02</b></div><div><span>Scene</span><b>1</b></div><div><span>Shot</span><b>The band - Musical intro</b></div><div><span>Shot size</span><b>MWS</b></div></div>
+  <div class="frame"><img src="frames/fband.jpg" width="1600" height="893" loading="lazy" alt="Frame 2: The band - Musical intro"></div>
+  <div class="cap"><p class="cue">Intro</p><p>GATSBY busk against the arched station wall: two acoustic guitars and a double bass. Heavy overcoats, hats and fingerless gloves, their breath visible in the cold air.</p><span class="trans">CUT</span></div>
+</article>
+<article class="card">
+  <div class="meta"><div><span>Frame</span><b>03</b></div><div><span>Scene</span><b>1</b></div><div><span>Shot</span><b>The old man</b></div><div><span>Shot size</span><b>MS</b></div></div>
+  <div class="frame"><img src="frames/f02g.jpg" width="1600" height="893" loading="lazy" alt="Frame 3: The old man"></div>
+  <div class="cap"><p class="cue">Intro</p><p>Snow falls around and through the old man but not on him. GATSBY play as buskers in the background and their breath is very visible in the cold air. The old man's breath is not visible.</p><span class="trans">CUT</span></div>
+</article>
+<article class="card">
+  <div class="meta"><div><span>Frame</span><b>04</b></div><div><span>Scene</span><b>1</b></div><div><span>Shot</span><b>The photograph</b></div><div><span>Shot size</span><b>HIGH OTS</b></div></div>
+  <div class="frame"><img src="frames/f03e.jpg" width="1600" height="893" loading="lazy" alt="Frame: The photograph"></div>
+  <div class="cap"><p class="cue">Verse 1 - "many years ago"</p><p>From above and behind: he takes a small, creased photo from his wallet showing an image of a younger woman (his wife).</p><span class="trans">CUT</span></div>
+</article>
+<article class="card">
+  <div class="meta"><div><span>Frame</span><b>05</b></div><div><span>Scene</span><b>2</b></div><div><span>Shot</span><b>Passengers</b></div><div><span>Shot size</span><b>WS</b></div></div>
+  <div class="frame"><img src="frames/f05f.jpg" width="1600" height="893" loading="lazy" alt="Frame 5: Passengers"></div>
+  <div class="cap"><p class="cue">Chorus 1</p><p>Commuters rush past in double speed as the old man remains motionless on the platform bench. A passing child waves at the old man.</p><span class="trans">CUT</span></div>
+</article>
+<article class="card">
+  <div class="meta"><div><span>Frame</span><b>06</b></div><div><span>Scene</span><b>3</b></div><div><span>Shot</span><b>The couple</b></div><div><span>Shot size</span><b>MS 2-shot</b></div></div>
+  <div class="frame"><img src="frames/f04b.jpg" width="1600" height="893" loading="lazy" alt="Frame 6: The couple"></div>
+  <div class="cap"><p class="cue">Verse 1</p><p>Goodbye 1 - A loving couple hug goodbye at the carriage door before he boards, his old leather luggage beside them. Camera refocuses to the band playing behind them.</p><span class="trans">CUT</span></div>
+</article>
+<article class="card">
+  <div class="meta"><div><span>Frame</span><b>07</b></div><div><span>Scene</span><b>4</b></div><div><span>Shot</span><b>Seeing off</b></div><div><span>Shot size</span><b>MS</b></div></div>
+  <div class="frame"><img src="frames/f06.jpg" width="1600" height="893" loading="lazy" alt="Frame 7: Seeing off"></div>
+  <div class="cap"><p class="cue">Verse 2</p><p>Goodbye 2 - 'Time to take your path'. A proud mother hugs her son at the carriage door before he boards the train. Steam rolls from under the train as the conductor's whistle blows.</p><span class="trans">CUT</span></div>
+</article>
+<article class="card">
+  <div class="meta"><div><span>Frame</span><b>08</b></div><div><span>Scene</span><b>4</b></div><div><span>Shot</span><b>The family in black</b></div><div><span>Shot size</span><b>WS</b></div></div>
+  <div class="frame"><img src="frames/f07b.jpg" width="1600" height="893" loading="lazy" alt="Frame 8: The family in black"></div>
+  <div class="cap"><p class="cue">"Don't say sorry"</p><p>The old man observes a family on their way to a funeral.</p><span class="trans">CUT</span></div>
+</article>
+<article class="card">
+  <div class="meta"><div><span>Frame</span><b>09</b></div><div><span>Scene</span><b>5</b></div><div><span>Shot</span><b>Ticket office</b></div><div><span>Shot size</span><b>MWS</b></div></div>
+  <div class="frame"><img src="frames/ftix2.jpg" width="1600" height="893" loading="lazy" alt="Frame 9: Ticket office"></div>
+  <div class="cap"><p class="cue">Into the final chorus</p><p>The old woman walks past the ticket office window without stopping. The clerk doesn't look up. Her breath is not visible in the cold air.</p><span class="trans">CUT</span></div>
+</article>
+<article class="card">
+  <div class="meta"><div><span>Frame</span><b>10</b></div><div><span>Scene</span><b>5</b></div><div><span>Shot</span><b>She arrives</b></div><div><span>Shot size</span><b>WS</b></div></div>
+  <div class="frame"><img src="frames/f08b.jpg" width="1600" height="893" loading="lazy" alt="Frame 10: She arrives"></div>
+  <div class="cap"><p class="cue">Final chorus</p><p>An old woman slowly moves through the crowd towards the camera. People part without seeing her. No breath. The old man sees her and rises from the bench in shock.</p><span class="trans">CUT</span></div>
+</article>
+<article class="card">
+  <div class="meta"><div><span>Frame</span><b>11</b></div><div><span>Scene</span><b>5</b></div><div><span>Shot</span><b>Hands</b></div><div><span>Shot size</span><b>ECU</b></div></div>
+  <div class="frame"><img src="frames/f09.jpg" width="1600" height="893" loading="lazy" alt="Frame 11: Hands"></div>
+  <div class="cap"><p class="cue">"Winter takes you by the hand"</p><p>The elderly couple hug in relief. She takes his hand on the lyric. His bare hand, her gloved one, a wedding ring.</p><span class="trans">CUT</span></div>
+</article>
+<article class="card">
+  <div class="meta"><div><span>Frame</span><b>12</b></div><div><span>Scene</span><b>6</b></div><div><span>Shot</span><b>The tickets</b></div><div><span>Shot size</span><b>INSERT</b></div></div>
+  <div class="frame"><img src="frames/f10.jpg" width="1600" height="893" loading="lazy" alt="Frame 12: The tickets"></div>
+  <div class="cap"><p class="cue">Final chorus</p><p>The conductor punches two tickets. The tickets clearly read SINGLE, LAST SERVICE, NO RETURN. And hands them to the couple.</p><span class="trans">CUT</span></div>
+</article>
+<article class="card">
+  <div class="meta"><div><span>Frame</span><b>13</b></div><div><span>Scene</span><b>6</b></div><div><span>Shot</span><b>Not yet</b></div><div><span>Shot size</span><b>OTS</b></div></div>
+  <div class="frame"><img src="frames/f11c.jpg" width="1600" height="893" loading="lazy" alt="Frame 13: Not yet"></div>
+  <div class="cap"><p class="cue">"It's not goodbye love"</p><p>At the carriage door, the old man pauses and turns to the band. They smile and nod their goodbyes (meaning they can see him). The conductor jokingly offers the band 3 tickets; they chuckle and shake their heads.</p><span class="trans">CUT</span></div>
+</article>
+<article class="card">
+  <div class="meta"><div><span>Frame</span><b>14</b></div><div><span>Scene</span><b>7</b></div><div><span>Shot</span><b>Into the light</b></div><div><span>Shot size</span><b>HIGH WS</b></div></div>
+  <div class="frame"><img src="frames/f12b.jpg" width="1600" height="893" loading="lazy" alt="Frame 14: Into the light"></div>
+  <div class="cap"><p class="cue">Fade-out</p><p>As the train slowly pulls away from the platform, the camera moves back to reveal the station name, IDIR (Irish for "between"). The train chugs into the low sun.</p><span class="trans">CUT</span></div>
+</article>
+<article class="card">
+  <div class="meta"><div><span>Frame</span><b>15</b></div><div><span>Scene</span><b>7</b></div><div><span>Shot</span><b>The valley</b></div><div><span>Shot size</span><b>AERIAL EWS</b></div></div>
+  <div class="frame"><img src="frames/f14.jpg" width="1600" height="893" loading="lazy" alt="Frame 15: The valley"></div>
+  <div class="cap"><p class="cue">Fade-out</p><p>As the song fades out, camera angle slowly pulls up and away to show an aerial view of the train as it heads down the snowy valley "into the sunlight".</p><span class="trans">DISSOLVE</span></div>
+</article>
+<article class="card">
+  <div class="meta"><div><span>Frame</span><b>16</b></div><div><span>Scene</span><b>7</b></div><div><span>Shot</span><b>The End</b></div><div><span>Shot size</span><b>TITLE</b></div></div>
+  <div class="frame"><img src="frames/fend4.jpg" width="1600" height="893" loading="lazy" alt="Frame 16: The End"></div>
+  <div class="cap"><p class="cue">Final note</p><p>Closing caption in classic film-noir script, 'The End', over the misty valley as the steam drifts across the frame.</p><span class="trans">FADE OUT</span></div>
+</article>
+</main>
+<footer>Keyframes for discussion, drawn with Higgsfield. Station: Idir.</footer>
+</body></html>
